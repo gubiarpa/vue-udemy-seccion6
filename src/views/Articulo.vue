@@ -1,5 +1,5 @@
 <template>
-  <Titulo texto="Tîtulo de mi Blog" />
+  <Titulo texto="Artículos de casa" />
 </template>
 
 <script>
