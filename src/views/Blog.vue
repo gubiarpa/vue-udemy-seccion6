@@ -1,9 +1,11 @@
 <template>
   <Titulo texto="Tîtulo de mi Blog" />
   <button @click="consumirApi">Consumir API</button><br>
-  <select>
-    <option :value="item.id" v-for="item in arrayBlog" :key="item.id">{{ item.title }}</option>
-  </select>
+  <div v-for="item in arrayBlog" :key="item.id">
+    <router-link :to="`/blog/${item.id}`">
+      {{ item.title }}
+    </router-link>
+  </div>
 </template>
 
 <script>
