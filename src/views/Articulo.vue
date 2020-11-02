@@ -1,5 +1,6 @@
 <template>
-  <Titulo texto="Artículos de casa" />
+  <Titulo texto="Ruta con parámetros" />
+  <h2>{{ $route.params.id }}</h2>
 </template>
 
 <script>
